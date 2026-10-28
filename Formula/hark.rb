@@ -7,7 +7,7 @@ class Hark < Formula
 
   depends_on arch: :arm64
   depends_on :macos
-  depends_on "whisper-cpp"
+  depends_on "whisper.cpp"
 
   def install
     # `hark setup` runs this install.sh, which takes its files from next to itself.
