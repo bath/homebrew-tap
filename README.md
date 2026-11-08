@@ -1,12 +1,13 @@
 # bath/homebrew-tap
 
 ```sh
-brew install bath/tap/hark
-hark setup
+brew install --cask bath/tap/hark
 ```
 
-| Formula | What it is |
+| Cask | What it is |
 |---|---|
-| `hark` | [Hark](https://hark.works): better, private, on-device dictation for macOS. Press F5, talk, and the text is pasted. |
+| `hark` | [Hark](https://hark.works): private, on-device dictation for macOS. Press F5, talk, and the text is pasted. |
 
-Homebrew cannot write to your home folder, so `hark setup` finishes the install. To update, run `hark update`. It runs `brew upgrade hark` and then `hark setup`.
+To update, run `brew upgrade --cask hark`, or use 🎙 → Check for Updates… in the app.
+
+The `hark` formula is the old Hammerspoon version. It is deprecated. Move to the app with `brew uninstall hark && brew install --cask bath/tap/hark`.
