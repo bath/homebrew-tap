@@ -5,6 +5,8 @@ class Hark < Formula
   sha256 "06e31685c1aaebc24c88eb7650cf6148b4ed2ff64bd22ac9a0317bb727c4034d"
   license "MIT"
 
+  deprecate! date: "2026-11-08", because: "is replaced by Hark.app", replacement_cask: "hark"
+
   depends_on arch: :arm64
   depends_on :macos
   depends_on "whisper.cpp"
